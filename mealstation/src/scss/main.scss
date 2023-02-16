@@ -1,5 +1,10 @@
 @import "./base/reset.scss";
 @import "./base/typography.scss";
-@import "../scss/abstracts/mixins.scss";
+@import "./abstracts/mixins.scss";
 @import "./abstracts/variables.scss";
+
+h1 {
+    font-family: Arial;
+    
+}
 
