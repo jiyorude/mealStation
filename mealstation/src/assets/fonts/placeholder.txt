@@ -1,2 +1,0 @@
-Placeholder textfile
-Made for the sole purpose of making sure that the folders are committed to GitHub (since GH does not commit empty folders)
