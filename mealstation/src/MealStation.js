@@ -1,4 +1,4 @@
-import "./css/main.min.css";
+import './css/main.min.css'
 
 function MealStation() {
   return (

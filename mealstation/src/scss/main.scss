@@ -1,10 +1,11 @@
-@import "./base/reset.scss";
-@import "./base/typography.scss";
-@import "./abstracts/mixins.scss";
-@import "./abstracts/variables.scss";
+@import './base/reset.scss';
+@import './base/typography.scss';
+@import './abstracts/mixins.scss';
+@import './abstracts/variables.scss';
+
 
 h1 {
-    font-family: Arial;
-    
-}
-
+    font-family: $HG-BO;
+    font-size: 44px;
+    color: $green-shade-four;
+};
