@@ -1,8 +1,9 @@
 import './css/main.min.css'
+import Header from './components/Header';
 
 function MealStation() {
   return (
-   <h1>Hello React!</h1>
+   <Header />
   );
 }
 
