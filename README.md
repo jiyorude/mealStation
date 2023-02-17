@@ -173,6 +173,8 @@ Live SASS Compiler (Ritwick Dey)
 Prettier (Prettier)
 ES7 React/Redux/React-Native snippets (dsznajder)
 Jest (Meta)
+Magnifying Glass Icon (svgrepo)
+Flag Icons (UXWing)
 ```
 
 ```

@@ -4,8 +4,6 @@
 @import './abstracts/variables.scss';
 
 
-h1 {
-    font-family: $HG-BO;
-    font-size: 44px;
-    color: $green-shade-four;
-};
+body {
+    background-color: $white-shade-two;
+}

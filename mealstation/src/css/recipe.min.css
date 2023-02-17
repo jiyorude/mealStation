@@ -1,0 +1,1 @@
+.flag{width:20px}.title{font-family:HankenGrotesk-Bold;color:#00ff2a}.dish{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr 1fr;border:2px solid #000;border-radius:5px;grid-template-areas:". . ." ". . ." "name name name" "sub sub flag"}.title{grid-area:name}.type{grid-area:sub}.flag{grid-area:flag}/*# sourceMappingURL=recipe.min.css.map */

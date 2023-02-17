@@ -1,0 +1,35 @@
+@import '../abstracts/mixins.scss';
+
+.flag {
+    width: 20px;
+}
+
+.title {
+    font-family: $HG-BO;
+    color: $green-main;
+}
+
+.dish {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    "name name name"
+    "sub sub flag"  
+}
+
+.title {
+    grid-area: name;
+}
+
+.type {
+    grid-area: sub;
+}
+
+.flag {
+    grid-area: flag;
+}

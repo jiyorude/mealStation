@@ -9,7 +9,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     position: fixed;
-
+    z-index: 3;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .ms-logo {

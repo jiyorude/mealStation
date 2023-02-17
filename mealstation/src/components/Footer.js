@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <footer>
       <p className="bold">&copy; mealStation - {thisYear}</p>
-      <p>Coded by Jordy Veenstra</p>
     </footer>
   );
 };
