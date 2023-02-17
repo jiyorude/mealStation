@@ -1,1 +1,6 @@
 // Mixins and Media Queries
+@import '../abstracts/variables.scss';
+
+@mixin bold {
+    font-family: $HG-BO;
+}
