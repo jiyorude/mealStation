@@ -65,7 +65,7 @@ _Two custom features_ implemented into the app are a _sorting function_ and a _t
 
 This chapter briefly discusses some of the architectural and design choices that were taken during the production process of the app.
 
-##### Folder Structure
+#### Folder Structure
 
 mealStation uses the following folder structure:
 
