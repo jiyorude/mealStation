@@ -1,8 +1,9 @@
 ![Logo](./mealstation/src/assets/readme/ms-logo.png)
 
-### Mobile-first Single-Page Recipe Browser app built in React
+#### Mobile-first Single-Page Recipe Browser app built in React
 
-The App has been tested on a 2020 M1 Macbook Air, a Mac Studio Cinema Display, a Samsung Galaxy S21 and a Samsung Galaxy S22 Ultra. In addition, various other devices were tested digitally with Google Chrome Developer Tools.
+The App has been tested on a 2020 M1 Macbook Air, a Mac Studio Cinema Display, a Samsung Galaxy S21 and a Samsung Galaxy S22 Ultra. 
+In addition, various other devices were tested digitally with Google Chrome Developer Tools.
 
 ---
 
@@ -19,7 +20,7 @@ The App has been tested on a 2020 M1 Macbook Air, a Mac Studio Cinema Display, a
 - [Credits](#CRE)
 
 
-#### How To Use
+## How To Use
 
 The application can be started in three different ways:
 
@@ -28,7 +29,7 @@ The application can be started in three different ways:
 - by forking the Repository or downloading the Source Code, navigating to the `build` folder and double clicking on the `index.html` file.
 
 
-#### Cloning the Repository
+## Cloning the Repository
 
 The Repository may be _cloned_ for code inspection and code experiments for independent and local purposes. This can be done in two ways:
 
@@ -53,14 +54,14 @@ The Repository may be _cloned_ for code inspection and code experiments for inde
 - Once done, type `npm start` to start the React Live Server. Your internet browser should open. Any changes made to the code will be updated in real-time, assuming that for SCSS-based adjustments you have a SCSS compiler installed such as Live SASS Compiler.
 
 
-#### Application Features
+## Application Features
 
 mealStation is a Single Page Application in the form of a recipe browser. The user is able to _scroll through all of the recipes_ currently stored in the database. Once a recipe is clicked, the user is automatically taken to a _full screen rendition of the recipe_; showing additional information regarding the recipe, such as an ingredients list, a photograph of the dish and a preparation video. The app will return to the database if the user exits the recipe screen. mealStation contains a _search bar_, allowing the user to search for a favorite recipe in a more convenient matter.
 
 _Two custom features_ implemented into the app are a _sorting function_ and a _three Course Randomizer_. The first feature allows the user to sort the database based on the type of preferred kitchen the dish originates from. The second feature outputs a pop-up screen with a appetizer, main course and desert chosen at random by React.
 
 
-#### Architectural Decisions
+## Architectural Decisions
 
 This chapter briefly discusses some of the architectural and design choices that were taken during the production process of the app.
 
@@ -111,12 +112,11 @@ The `index.js` is the main index page of the app which in conjunction initialize
 
 Both the Index and MealStation files were placed in the main `source` folder in order for the user to easily find them at all times as both of these files are the most important JavaScript files found in the project. Both files serve as the core foundation of mealStation and therefore, fast recognizability was of most importance.
 
-**assets** -- _(and fonts, image, readme, video)_
+**assets** 
 Main folder to where all of the App's assets are stored in order to keep the project repository clean and accessible. All of the different assets have been stored in respective folders in order to avoid confusion and to allow the user to find the required asset in a swift manners. Assets related to the readme, such as the logo displayed on top, have been placed in a separate `readme` folder in order to store these away from the dependencies required by React and to avoid any confusion as these assets are not used anywhere inside the React App.
 
 **components**
-MealStation.js consists of a number of React-based components. In order to allow the user to keep a clear and understandable overview of all files, the choice was made to place all of the components into a separate `components` folder found inside of the src or `source` folder. The components folder was not placed in the assets folder as this folder was primarily reserved for media-based and design-based assets.
-The components folder contains all of the separate React components such as the recipe browser itself, the recipe database, the Header and footer, etc.
+MealStation.js consists of a number of React-based components. In order to allow the user to keep a clear and understandable overview of all files, the choice was made to place all of the components into a separate `components` folder found inside of the src or `source` folder. The components folder was not placed in the assets folder as this folder was primarily reserved for media-based and design-based assets. The components folder contains all of the separate React components such as the recipe browser itself, the recipe database, the Header and footer, etc.
 
 Athough the database is in fact a regular JavaScript object, it was chosen to place this in the components folder as some of the components use the data found in that particular file; making the database a _important component_ of the app itself, thus explaning why it was placed there.
 
@@ -128,19 +128,21 @@ Contains all of the minified css files compiled by Live SASS Compiler. The CSS f
 **scss**
 Contains all of the SASS stylesheets, made according to the `SASS 7-1 Architecture` in order to keep the various stylesheets recognizable, modular, understandable and accessible. The `abstracts` folder contains SCSS mixins and font/color variables. The `base` folder contains two SASS stylesheets containing a CSS box-model reset and the fonts used within the app. The `components` folder contains styling for all of the separate components, such as the header and footer. The `main.scss` file found in the scss folder combines all styling found in the other stylesheets and adds additional styling for the app itself.
 
-##### Libraries
+#### Libraries
+
 `Google Fonts` was used as a font library in order to obtain the various fonts used within mealStation. `ReactSVG` was used in order to include various SVG files inside of their respective components. While SVG's can be added in React without any additional library or module, it requires a lot of code to do so and negatively affects the readability of the code. While the `<img>` element supports svg, a number of issues have been experienced in the past, with logo's being only half visible or loading extremely slow. ReactSVG solves all of these issues and allows for SVG's to be implemented in a single line of code. 
 
 `anime.js` is a JavaScript animation library used for the various animations found within the app. While there are other libraries available such as gsap, the choice for animejs was primarily one of personal preference as it was used in all of my other projects. Lastly, `fullPage.js` is a JavaScript library that allows for the creation of beautiful fullscreen experiences and scroll animations. This library was used for both the recipe browser and the actual recipe card. 
 
-##### Frameworks
+#### Frameworks
+
 The App was built within the React framework and utilizes JavaScript and JSX. Stylesheet-wise, SCSS was used to design the app in tandem with 'Live SASS Compiler' to compile the SCSS stylesheets to CSS in real-time, as internet browsers are unable to properly understand SCSS by default. SCSS was chosen as a CSS framework because of the 'mixins' and 'SCSS variables'. Especially mixins can tremendously contribute to a proper usage of the `DRY-principle`. The mixins and SCSS variable functions save time and are easier to use/declare within SCSS compared to vanilla CSS.
 
-##### Application State
+#### Application State
 **YET TO BE ADDED ONCE APP IS DONE**
 
 
-#### Credits
+## Credits
 To conclude, a list can be found underneath containing all of the external assets used during the production process of the app.
 
 ```
@@ -157,5 +159,4 @@ Prettier (Prettier)
 ES7 React/Redux/React-Native snippets (dsznajder)
 ```
 
-Coded by Jordy Veenstra
-February 2023
+`Coded by Jordy Veenstra - February 2023`
