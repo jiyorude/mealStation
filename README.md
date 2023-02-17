@@ -6,7 +6,10 @@ Mobile-first Single-Page Recipe Browser app built in React
 
 ---
 
-Tested on a 2020 M1 Macbook Air, Mac Studio Cinema Display, Samsung Galaxy S21 and a Samsung Galaxy S22 ultra. In addition, Google Chrome Developer Tools and Jest were used for testing purposes.
+mealStation is a recipe browser SPA made with mobile-first responsivity in mind. It contains various
+features, such as a recipe search feature, a sorting function which allows the user to sort
+recipes based on the kitchen of origin, and a threeCourseRandomizer, a feature which outputs a random
+appetizer, main course and a desert. Bon Appetit!
 
 
 ## Table of Contents
@@ -169,6 +172,9 @@ fullPage.js (Alvaro Trigo)
 Live SASS Compiler (Ritwick Dey)
 Prettier (Prettier)
 ES7 React/Redux/React-Native snippets (dsznajder)
+Jest (Meta)
 ```
 
-`Coded by Jordy Veenstra - February 2023`
+```
+Coded by Jordy Veenstra - February 2023
+```
