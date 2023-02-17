@@ -1,18 +1,18 @@
 ![Logo](./mealstation/src/assets/readme/ms-logo.png)
 
-#### Mobile-first Single-Page Recipe Browser app built in React
-
-The App has been tested on a 2020 M1 Macbook Air, a Mac Studio Cinema Display, a Samsung Galaxy S21 and a Samsung Galaxy S22 Ultra. 
-In addition, various other devices were tested digitally with Google Chrome Developer Tools.
+##### Mobile-first Single-Page Recipe Browser app built in React
 
 ---
+
+Tested on a 2020 M1 Macbook Air, Mac Studio Cinema Display, Samsung Galaxy S21 and a Samsung Galaxy S22 ultra. In addition, Google Chrome Developer Tools and Jest were used for testing purposes.
+
 
 ### Table of Contents
 
 - [How to Use](#how-to-use)
 - [Cloning the Repository](#forking-the-repository)
 - [Application Features](#application-features)
-- [Architectural Decisions](#architectural-decisions)]
+- [Architectural Decisions](#architectural-decisions)
   - [Folder Structure](#folder-structure)
   - [Libraries](#libraries)
   - [Frameworks](#frameworks)
