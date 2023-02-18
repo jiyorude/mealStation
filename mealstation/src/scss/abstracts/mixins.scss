@@ -1,6 +1,134 @@
-// Mixins and Media Queries
 @import '../abstracts/variables.scss';
 
+
+//mixins
 @mixin bold {
     font-family: $HG-BO;
+}
+
+//media queries
+
+$por: portrait;
+$lnd: landscape;
+
+//portrait
+$po-tiny: 281px; 
+$po-high: 750px;
+$po-tab: 1024px;
+$po-a51w: 412px;
+$po-a51h: 914px; 
+
+@media (orientation: $por) and (max-width: $po-tiny) {
+    h1 {
+        font-size: 2vh !important;
+    }
+}
+
+@media (orientation: $por) and (min-width: $po-high) {
+    button {
+        background-size: 500px !important;
+    }
+}
+
+@media (orientation: $por) and (min-width: $po-tab) {
+    button {
+        background-size: 600px !important;
+    }
+}
+
+@media (orientation: $por) and (width: $po-a51w) {
+    h1 {
+        font-size: 2.2vh !important;
+    }
+}
+
+//landscape
+$la-extrtiny: 320px;
+$la-tiny: 640px;
+$la-small: 1024px;
+$la-regular: 1280px;
+$la-medium: 1440px;
+$la-large: 1920px;
+$la-xlarge: 3000px;
+
+@media (orientation: $lnd) and (max-width: $la-extrtiny) {
+  .recipe-grid {
+    top: 20vh!important;
+  }
+}
+
+@media (orientation: $lnd) and (max-width: $la-tiny) {
+    .recipe-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+@media (orientation: $lnd) and (max-width: $la-small) {
+    .recipe-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+@media (orientation: $lnd) and (min-width: $la-regular) {
+    .recipe-grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 20px;
+            width: 90%;
+        }
+    button {
+        background-size: 650px!important;
+    }
+    h1 {
+        font-size: 2vw!important;
+    }   
+    h3 {
+        font-size: 1.1vw!important;
+    }
+    #flag {
+        top: -1.7vw!important;
+    }
+}
+
+@media (orientation: $lnd) and (min-width: $la-medium) {
+    input {
+            padding: 10px 100px;
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: 2.5vw 2.5vw;
+            color: $black-shade-two;
+            border: 2px solid $green-shade-one;
+            border-radius: 7px;
+            font-family: $HG-LI;
+            transition: 0.4s;
+            font-size: 1.2vw;
+        }
+    .searchbar {
+            margin-top:0.5vw!important;
+    }
+}
+
+@media (orientation: $lnd) and (min-width: $la-xlarge) {
+    button {
+        background-size: 50vw!important;
+        border: 5px solid $green-shade-two!important;
+    }
+        input {
+            padding: 10px 100px;
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: 2vw 2vw!important;
+            color: $black-shade-two;
+            border: 2px solid $green-shade-one;
+            border-radius: 7px;
+            font-family: $HG-LI;
+            transition: 0.4s;
+            font-size: 1.2vw;
+        }
+    
+        .searchbar {
+            margin-top: 0.5vw !important;
+        }
 }
