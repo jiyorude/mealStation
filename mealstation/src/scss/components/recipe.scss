@@ -1,35 +1,59 @@
 @import '../abstracts/mixins.scss';
 
-.flag {
-    width: 20px;
-}
-
-.title {
-    font-family: $HG-BO;
-    color: $green-main;
-}
-
-.dish {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
+button {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: repeat(3, 1fr);     
+     background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: 300px;
+    background-position-x: center;
+    background-position-y: center;
+    outline: none;
     border-radius: 5px;
-    grid-template-areas:
-    ". . ."
-    ". . ."
-    "name name name"
-    "sub sub flag"  
+    grid-template-areas: 
+     ". . ."
+     "name name name"
+     "type type flag";
+
+ 
 }
 
-.title {
+ h1 {
+    font-size: 2.6vh;
     grid-area: name;
-}
+    text-align: left;
+    text-transform: uppercase;
+    color: $green-main;
+    font-family: $HG-RE;
+    position: relative;
+    top: 1.5vh;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0.5)
+ }
 
-.type {
-    grid-area: sub;
-}
+ h3 {
+    font-size: 1vh;
+    grid-area: type;
+    text-align: left;
+    position: relative;
+    margin-top:1.5vh;
+    width: 45%;
+    padding-left: 5.7px;
+    font-family: $HG-LI-IT;
+    color: $green-shade-one;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
 
-.flag {
+#flag {
     grid-area: flag;
-}
+    width: 2.3vh;
+    position: relative;
+    justify-self:flex-end;
+    align-self: center;
+    top: -1.8vh;
+    padding-bottom: 3px;
+    padding-right: 3px;
+ };
+

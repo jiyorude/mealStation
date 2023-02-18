@@ -1,32 +1,31 @@
 import React from "react";
-import { ReactSVG } from "react-svg";
+
 import "../scss/components/recipe.scss";
-import flagItaly from "../assets/image/flags/italian-flag.svg";
-import flagArgentina from "../assets/image/flags/argentinian-flag.svg";
-import flagChina from "../assets/image/flags/chinese-flag.svg";
-import flagUSA from "../assets/image/flags/american-flag.svg";
+import flagItaly from "../assets/image/flags/italy.png";
+import flagArgentina from "../assets/image/flags/argentina.png";
+import flagChina from "../assets/image/flags/china.png";
+import flagUSA from "../assets/image/flags/usa.png";
 
 // IMPORT FLAGS HERE AND USE LINKS DIRECTLY.
 const Recipe = (props) => {
   let flagSource;
 
   if (props.flag === "italy") {
-    flagSource = {flagItaly};
+    flagSource = flagItaly;
   } else if (props.flag === "china") {
-    flagSource = {flagChina};
+    flagSource = flagChina;
   } else if (props.flag === "argentina") {
-    flagSource = {flagArgentina};
+    flagSource = flagArgentina;
   } else if (props.flag === "usa") {
-    flagSource = {flagUSA};
-  };
+    flagSource = flagUSA;
+  }
 
   return (
     <>
-      <button className={props.dish}>
+      <button className={props.dish} style={{ backgroundImage: `url(${props.img})` }}>
         <h1>{props.title}</h1>
         <h3>{props.type}</h3>
-        <img src={props.img} alt={props.alt}></img>
-        <ReactSVG id="flag" className={props.flag} src={flagSource} />
+        <img id="flag" className={props.flag} src={flagSource} alt="flag" />
       </button>
     </>
   );

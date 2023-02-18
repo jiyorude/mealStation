@@ -3,7 +3,6 @@
 
 section {
     top: 7vh;
-    border-bottom: -15vh;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -34,23 +33,3 @@ input:focus {
     outline: $green-shade-two;
 }
 
-
-
-#spiedini {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    border: 2px solid black;
-    border-radius: 5px;
-    grid-template-areas:
-    ". . ."
-    ". . ."
-    "name name name"
-    "sub sub flag"
-}
-
-
-
-.flag-italy {
-    width: 15px;
-}
