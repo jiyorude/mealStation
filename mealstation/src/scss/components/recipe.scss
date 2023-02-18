@@ -12,16 +12,25 @@ button {
     background-position-y: center;
     outline: none;
     border-radius: 5px;
+    border: 1px solid $green-shade-two;
+    transition: 0.4s;
     grid-template-areas: 
      ". . ."
      "name name name"
-     "type type flag";
+     "type type flag"
+    ;
+    background-blend-mode: overlay;
+    background-color: rgba(100, 100, 100, 1);
 
- 
+};
+
+button:hover {
+    background-blend-mode: overlay;
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
  h1 {
-    font-size: 2.6vh;
+    font-size: 2.4vh;
     grid-area: name;
     text-align: left;
     text-transform: uppercase;
@@ -52,7 +61,7 @@ button {
     position: relative;
     justify-self:flex-end;
     align-self: center;
-    top: -1.8vh;
+    top: -1.5vh;
     padding-bottom: 3px;
     padding-right: 3px;
  };

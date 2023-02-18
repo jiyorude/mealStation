@@ -6,7 +6,6 @@ import flagArgentina from "../assets/image/flags/argentina.png";
 import flagChina from "../assets/image/flags/china.png";
 import flagUSA from "../assets/image/flags/usa.png";
 
-// IMPORT FLAGS HERE AND USE LINKS DIRECTLY.
 const Recipe = (props) => {
   let flagSource;
 

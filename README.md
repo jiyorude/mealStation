@@ -6,11 +6,9 @@ Mobile-first Single-Page Recipe Browser app built in React
 
 ---
 
-mealStation is a recipe browser SPA made with mobile-first responsivity in mind. It contains various
-features, such as a recipe search feature, a sorting function which allows the user to sort
-recipes based on the kitchen of origin, and a threeCourseRandomizer, a feature which outputs a random
-appetizer, main course and a desert. Bon Appetit!
+mealStation is a recipe browser SPA made with mobile-first responsivity in mind. The App contains recipes from four different countries: Italy, China, Argentina and the United States, with each of them having two appetizers, two main courses and two desserts. 
 
+The App contains two features. The first feature is a search feature which allows you to quickly find the recipe you are looking for. The second feature is a sorting feature which allows the user to sort recipes based on their kitchen of origin and type of dish. Bon Appetit.
 
 ## Table of Contents
 
@@ -61,9 +59,9 @@ The Repository may be _cloned_ for code inspection and code experiments for inde
 
 ## Application Features
 
-mealStation is a Single Page Application in the form of a recipe browser. The user is able to _scroll through all of the recipes_ currently stored in the database. Once a recipe is clicked, the user is automatically taken to a _full screen rendition of the recipe_; showing additional information regarding the recipe, such as an ingredients list, a photograph of the dish and a preparation video. The app will return to the database if the user exits the recipe screen. mealStation contains a _search bar_, allowing the user to search for a favorite recipe in a more convenient matter.
+mealStation is a Single Page Application in the form of a recipe browser. The user is able to _scroll through all of the recipes_ currently stored in the database. Once a recipe is clicked, the user is automatically taken to a _pop-up rendition of the recipe_; showing additional information regarding the recipe, such as an ingredients list, a photograph of the dish and a preparation video. The app will return to the database if the user exits the recipe screen. mealStation contains a _search bar_, allowing the user to search for a favorite recipe in a more convenient matter.
 
-_Two custom features_ implemented into the app are a _sorting function_ and a _three Course Randomizer_. The first feature allows the user to sort the database based on the type of preferred kitchen the dish originates from. The second feature outputs a pop-up screen with a appetizer, main course and desert chosen at random by React.
+_A custom feature_ implemented into the app are a _sorting function_ and a _three Course Randomizer_. The first feature allows the user to sort the database based on the type of preferred kitchen the dish originates from. The second feature outputs a pop-up screen with a appetizer, main course and desert chosen at random by React.
 
 
 ## Architectural Decisions
@@ -84,6 +82,8 @@ mealStation uses the following folder structure:
     |-- assets
       |-- fonts
       |-- image
+          |-- flags
+          |-- food
       |-- readme
       |-- video
     |-- components
@@ -156,6 +156,13 @@ The App was built within the React framework and utilizes JavaScript and JSX. St
 #### Application State
 **YET TO BE ADDED ONCE APP IS DONE**
 
+## Testing
+The App has been tested on a number of devices:
+
+* Samsung Galaxy S21
+* Samsung Galaxy S22 Ultra
+* Macbook Air M1 2020 13"
+* All available responsive templates found in Google Chrome Developer Tools (yes, even the JioPhone 2..)
 
 ## Credits
 To conclude, a list can be found underneath containing all of the external assets used during the production process of the app.
@@ -168,13 +175,13 @@ Open Sans Font (Google Fonts)
 Pacifico Font (Google Fonts)
 ReactSVG (tanem)
 anime.js (Julian Garnier)
-fullPage.js (Alvaro Trigo)
 Live SASS Compiler (Ritwick Dey)
 Prettier (Prettier)
 ES7 React/Redux/React-Native snippets (dsznajder)
 Jest (Meta)
 Magnifying Glass Icon (svgrepo)
-Flag Icons (UXWing)
+Flag Icons (Wikipedia)
+Food Photos (Various Websites)
 ```
 
 ```
