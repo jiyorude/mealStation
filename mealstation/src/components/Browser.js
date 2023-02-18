@@ -37,8 +37,6 @@ const Browser = () => {
         <Recipe dish="flan" title="Flan" type="Dessert" img={require("../assets/image/food/flan.jpg")} alt="Argentinian Flan" flag="argentina" />
         <Recipe dish="beef-stir-fry" title="Beef Fry" type="Main" img={require("../assets/image/food/beefstirfry.jpg")} alt="Chinese Beef Stir Fry" flag="china" />
         <Recipe dish="empanadas" title="Empanadas" type="Appetizer" img={require("../assets/image/food/empanadas.jpg")} alt="Argentinian Empanadas" flag="argentina" />
-
-
       </div>
     </section>
   );
