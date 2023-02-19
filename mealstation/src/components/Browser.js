@@ -7,7 +7,6 @@ import magGlass from "../assets/image/mag-glass.svg";
 import Recipe from "./Recipe";
 import { useState } from "react";
 
-
 const recipes = [
   {
     dish: "spiedini",
