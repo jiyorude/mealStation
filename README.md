@@ -34,13 +34,13 @@ The application can be started in three different ways:
 
 ## Cloning the Repository
 
-The Repository may be _cloned_ for code inspection and code experiments for independent and local purposes. This can be done in two ways:
+The Repository may be _cloned_ for code inspection and code experiments for independent and local purposes. **Node.js is required for both options to work.** More info can be found [here](https://nodejs.org/en/). The cloning can be done in two possible ways:
 
 **Cloning through GitHub Desktop**
 
 - Open GitHub Desktop and select `File > Clone Repository`
 - In the tab that opens, select `URL` and type `jiyorude/mealStation`
-- Select a directory for GHD to save the Repository in
+- Select a directory for GitHub Desktop to save the Repository in
 - Once saved, click on the button `Open in Visual Studio Code`
 - Inside Visual Studio Code, open a new Terminal window with `Terminal > New Terminal` and type `cd mealstation` to navigate to the mealstation directory
 - If that fails, right-click on the mealstation folder and click on `Copy Path`. Then proceed to type: `cd [path]` Paste the path you just copied in `[path]`.
