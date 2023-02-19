@@ -88,12 +88,65 @@ button:hover {
    height: 90%;
    background-color: $white-shade-one;
    border-radius: 5px;
+   overflow-y:auto;
 }
 
 .exit {
    position: fixed;
-   left: 9%;
-   top: 6.2%;
+   display: flex;
+   margin-top: 1.5vh;
    font-size: 1.5vh;
    font-family: $HG-BO;
+   color: $green-shade-four;
+}
+
+.info {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-items: center;
+   text-align: center;
+   margin-top: 5vh;
+}
+
+
+body.modal-open {
+   overflow: hidden;
+}
+
+.title {
+   font-family: $OS-BO;
+   letter-spacing: 0.2vh;
+   font-size: 3.5vh;
+   margin-bottom: 2vh;
+   color: $green-shade-four;
+}
+
+.type {
+   font-family: $OS-LI;
+   letter-spacing: 0.5vh;
+   font-size: 1.2vh;
+   color: $green-shade-four;
+   margin-bottom: 2vh;
+}
+
+.thumb {
+   width: 28vh;
+   margin-top: 3vh;
+}
+
+.thumbflag {
+   width: 4vh;
+}
+
+.ingredients-title {
+  @include recipeTitle
+}
+
+.preparation-title {
+   @include recipeTitle
+}
+
+li {
+   list-style-type:none;
 }

@@ -6,6 +6,14 @@
     font-family: $HG-BO;
 }
 
+@mixin recipeTitle {
+    font-family: $OS-BO;
+    letter-spacing: 0.5vh;
+    font-size: 1.5vh;
+    color: $green-shade-four;
+    margin-top: 5vh;
+}
+
 //media queries
 
 $por: portrait;
