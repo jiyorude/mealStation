@@ -20,6 +20,7 @@ The App contains two features. The first feature is a search feature which allow
   - [Libraries](#libraries)
   - [Frameworks](#frameworks)
   - [Application State](#application-state)
+- [Personal Reflection](#personal-reflection)
 - [Credits](#CRE)
 
 

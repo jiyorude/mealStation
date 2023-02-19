@@ -59,23 +59,26 @@ $la-medium: 1440px;
 $la-large: 1920px;
 $la-xlarge: 3000px;
 
-@media (orientation: $lnd) and (max-width: $la-extrtiny) {
+@media (orientation: $lnd) and (min-width: $la-extrtiny) {
   .recipe-grid {
     top: 20vh!important;
   }
 }
 
-@media (orientation: $lnd) and (max-width: $la-tiny) {
+@media (orientation: $lnd) and (min-width: $la-tiny) {
     .recipe-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
     }
 }
 
-@media (orientation: $lnd) and (max-width: $la-small) {
+@media (orientation: $lnd) and (min-width: $la-small) {
     .recipe-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
+    }
+    button {
+        background-size: 500px!important;
     }
 }
 

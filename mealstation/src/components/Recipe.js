@@ -6,7 +6,6 @@ import flagItaly from "../assets/image/flags/italy.png";
 import flagArgentina from "../assets/image/flags/argentina.png";
 import flagChina from "../assets/image/flags/china.png";
 import flagUSA from "../assets/image/flags/usa.png";
-import cheesecake from "../assets/image/food/cheesecake.jpeg";
 
 const Recipe = (props) => {
   const [showModal, setModal] = useState(false);
@@ -42,6 +41,10 @@ const Recipe = (props) => {
     flagSource = flagUSA;
   }
 
+  let ingredientsList = props.ingredients;
+  let preparationList = props.preparation;
+  let ytID = props.youTubeID;
+
   return (
     <>
       <button onClick={() => setModal(true)} className={props.dish} style={{ backgroundImage: `url(${props.img})` }}>
@@ -56,16 +59,32 @@ const Recipe = (props) => {
               EXIT
             </p>
             <div className="info">
-              <h4 className="title">NEW YORK CHEESECAKE</h4>
-              <h5 className="type">APPETIZER</h5>
-              <img className="thumbflag" src={flagUSA} alt="american flag"></img>
-              <img className="thumb" src={cheesecake} alt="cheesecake"></img>
+              <h4 className="title">{props.title}</h4>
+              <h5 className="type">{props.type}</h5>
+              <img className="thumbflag" src={flagSource} alt="flag"></img>
+              <img className="thumb" src={props.img} alt={props.alt}></img>
               <h6 className="ingredients-title">INGREDIENTS</h6>
               <ul>
-                <li>111111111111111111</li>
-                <li>222222222</li>
+                {ingredientsList.map((ingredient, index) => (
+                  <li key={index}>{ingredient}</li>
+                ))}
               </ul>
               <h6 className="preparation-title">PREPARATION</h6>
+              <ul>
+                {preparationList.map((step, index) => (
+                  <li key={index}>{step}</li>
+                ))}
+              </ul>
+              <div className="video">
+              <iframe
+                width="250"
+                height="140"
+                frameBorder={0}
+                src={`https://www.youtube.com/embed/${ytID}`}
+                title="YouTube video player"
+                allowFullScreen
+              ></iframe></div>
+
             </div>
           </div>
         </div>

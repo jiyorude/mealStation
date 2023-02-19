@@ -75,7 +75,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.4s;
     z-index: 999;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,15 +88,34 @@ button:hover {
    background-color: $white-shade-one;
    border-radius: 5px;
    overflow-y:auto;
+   
 }
 
 .exit {
    position: fixed;
    display: flex;
+   background-color: $white-shade-two;
+   padding-left: 1vh;
+   padding-right: 1.5vh;
+   padding-top: 0.5vh;
+   padding-bottom: 0.5vh;
+   border: 1px solid $green-shade-four;
+   width: 10.5%;
+   left: 8vh;
+   border-radius: 5px;
+   text-align: center;
    margin-top: 1.5vh;
    font-size: 1.5vh;
    font-family: $HG-BO;
    color: $green-shade-four;
+   transition: 0.3s
+
+}
+
+.exit:hover{
+   margin-top: 2vh;
+   background-color: $green-shade-four;
+   color: $white-shade-two;
 }
 
 .info {
@@ -120,6 +138,7 @@ body.modal-open {
    font-size: 3.5vh;
    margin-bottom: 2vh;
    color: $green-shade-four;
+   text-transform: uppercase;
 }
 
 .type {
@@ -128,6 +147,7 @@ body.modal-open {
    font-size: 1.2vh;
    color: $green-shade-four;
    margin-bottom: 2vh;
+   text-transform: uppercase;
 }
 
 .thumb {
@@ -144,9 +164,15 @@ body.modal-open {
 }
 
 .preparation-title {
-   @include recipeTitle
+   @include recipeTitle;
+
 }
 
 li {
    list-style-type:none;
+}
+
+iframe {
+   margin-top: 4vh;
+   margin-bottom: 4vh;
 }
