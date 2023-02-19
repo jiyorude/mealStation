@@ -73,9 +73,9 @@ This chapter briefly discusses some of the architectural and design choices that
 mealStation uses the following folder structure:
 
 ```
+|-- docs
 |-- mealstation
   |-- build
-  |-- docs
   |-- node_modules
   |-- public
   |-- src
@@ -99,6 +99,10 @@ mealStation uses the following folder structure:
 
 Underneath, a detailed explanation is given regarding the contents of every single folder found in the project.
 
+**docs**
+
+To contrary belief, this is _not_ a wiki/documentation section. This folder contains a copy of the production build for GitHub pages in order to provide a proper live demo. GitHub can only create a live-demo from files created in the root of the project or in a dedicated `docs` folder. In order to keep the project repositor itself clean and accessible at all times, the decision was made to place the live demo in the docs folder.
+
 **mealstation**
 
 The default folder containing the entire project. Created by `create-react-app` by default
@@ -106,10 +110,6 @@ The default folder containing the entire project. Created by `create-react-app` 
 **build**
 
 Folder containing the production-ready and optimized build of mealStation. Created by create-react-app by default after initiating `npm run build`
-
-**docs**
-
-To contrary belief, this is _not_ a wiki/documentation section. This folder contains a copy of the production build for GitHub pages in order to provide a proper live demo. GitHub can only create a live-demo from files created in the root of the project or in a dedicated `docs` folder. In order to keep the project repositor itself clean and accessible at all times, the decision was made to place the live demo in the docs folder.
 
 **node_modules**
 
