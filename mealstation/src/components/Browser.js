@@ -723,7 +723,6 @@ const recipes = [
   },
 ];
 
-
 const Browser = () => {
   const [search, setSearch] = useState("");
 

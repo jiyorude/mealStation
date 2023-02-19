@@ -18,18 +18,10 @@ const Recipe = (props) => {
     }
   }, [showModal]);
 
-  useEffect(() => {
-    if (showModal) {
-      document.body.classList.add("modal-open");
-    } else {
-      document.body.classList.remove("modal-open");
-    }
-    return () => {
-      document.body.classList.remove("modal-open");
-    };
-  }, [showModal]);
-
   let flagSource;
+  let ingredientsList = props.ingredients;
+  let preparationList = props.preparation;
+  let ytID = props.youTubeID;
 
   if (props.flag === "italy") {
     flagSource = flagItaly;
@@ -41,10 +33,6 @@ const Recipe = (props) => {
     flagSource = flagUSA;
   }
 
-  let ingredientsList = props.ingredients;
-  let preparationList = props.preparation;
-  let ytID = props.youTubeID;
-
   return (
     <>
       <button onClick={() => setModal(true)} className={props.dish} style={{ backgroundImage: `url(${props.img})` }}>
@@ -52,9 +40,10 @@ const Recipe = (props) => {
         <h3>{props.type}</h3>
         <img id="flag" className={props.flag} src={flagSource} alt="flag" />
       </button>
+
       {showModal && (
         <div className="background">
-          <div className="flex-container">
+          <div className="flex-container" style={{ transform: "translateY(0px)" }}>
             <p className="exit" onClick={() => setModal(false)}>
               EXIT
             </p>
@@ -66,25 +55,29 @@ const Recipe = (props) => {
               <h6 className="ingredients-title">INGREDIENTS</h6>
               <ul>
                 {ingredientsList.map((ingredient, index) => (
-                  <li key={index}>{ingredient}</li>
+                  <li className="ingr-list" key={index}>
+                    {ingredient}
+                  </li>
                 ))}
               </ul>
               <h6 className="preparation-title">PREPARATION</h6>
               <ul>
                 {preparationList.map((step, index) => (
-                  <li key={index}>{step}</li>
+                  <li className="prep-list" key={index}>
+                    {step}
+                  </li>
                 ))}
               </ul>
+              <h6 className="video-title">VIDEO</h6>
               <div className="video">
-              <iframe
-                width="250"
-                height="140"
-                frameBorder={0}
-                src={`https://www.youtube.com/embed/${ytID}`}
-                title="YouTube video player"
-                allowFullScreen
-              ></iframe></div>
-
+                <iframe
+                  frameBorder={0}
+                  width="225vw"
+                  src={`https://www.youtube.com/embed/${ytID}`}
+                  title="YouTube video player"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>

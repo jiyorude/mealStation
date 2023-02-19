@@ -30,17 +30,35 @@ $po-a51h: 914px;
     h1 {
         font-size: 2vh !important;
     }
+    .prep-list {
+        font-size: 0.4vh;
+        padding: 1vh 0vh;
+    }
+
+    iframe {
+        width: 150px;
+        height: 80px;
+    }
 }
 
 @media (orientation: $por) and (min-width: $po-high) {
     button {
         background-size: 500px !important;
     }
+    iframe {
+        width: 500px;
+        height: 280px;
+    }
 }
 
 @media (orientation: $por) and (min-width: $po-tab) {
     button {
         background-size: 600px !important;
+    }
+
+    iframe {
+        width: 700px;
+        height:480px;
     }
 }
 
@@ -63,12 +81,24 @@ $la-xlarge: 3000px;
   .recipe-grid {
     top: 20vh!important;
   }
+  iframe {
+    width: 200px!important;
+  }
+  .exit {
+    width: 10%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (orientation: $lnd) and (min-width: $la-tiny) {
     .recipe-grid {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(8, 1fr);
+    }
+    iframe {
+        width: 300px!important;
+        height: 150px!important;
     }
 }
 
@@ -80,6 +110,14 @@ $la-xlarge: 3000px;
     button {
         background-size: 500px!important;
     }
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+    .ingredients-title {
+        font-size: 5vw;
+    }
+
 }
 
 @media (orientation: $lnd) and (min-width: $la-regular) {
@@ -101,23 +139,63 @@ $la-xlarge: 3000px;
     #flag {
         top: -1.7vw!important;
     }
+    .prep-list {
+        font-size: 2.2vh!important;
+    }
+    .ingredients-title {
+        font-size: 3vh!important;
+    }
+    .video-title {
+        font-size: 3vh!important;
+        margin-top: 5vh!important;
+    }
+    .preparation-title {
+        font-size:3vh!important;
+    }
+    .title {
+        font-size: 4vh!important;
+    }
+    .thumbflag {
+        width: 8vh!important;
+    }
+    .thumb {
+        width: 60vh!important;
+    }
+    .type {
+        font-size:1.5vh!important;
+    }
+    iframe {
+        width: 700px!important;
+        height: 350px!important;
+    }
 }
 
 @media (orientation: $lnd) and (min-width: $la-medium) {
     input {
-            padding: 10px 100px;
-            background-repeat: no-repeat;
-            background-position: center right;
-            background-size: 2.5vw 2.5vw;
-            color: $black-shade-two;
-            border: 2px solid $green-shade-one;
-            border-radius: 7px;
-            font-family: $HG-LI;
-            transition: 0.4s;
-            font-size: 1.2vw;
-        }
+        padding: 10px 100px;
+        background-repeat: no-repeat;
+        background-position: center right;            
+        background-size: 2.5vw 2.5vw;
+        color: $black-shade-two;
+        border: 2px solid $green-shade-one;
+        border-radius: 7px;
+        font-family: $HG-LI;
+        transition: 0.4s;
+        font-size: 1.2vw;
+    };
+    iframe {
+        width: 800px !important;
+        height: 400px !important;
+    };           
     .searchbar {
-            margin-top:0.5vw!important;
+        margin-top:0.5vw!important;
+    }
+}
+
+@media (orientation: $lnd) and (min-width: $la-large) {
+    iframe {
+        width: 1200px!important;
+        height:800px!important;
     }
 }
 

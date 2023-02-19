@@ -87,8 +87,7 @@ button:hover {
    height: 90%;
    background-color: $white-shade-one;
    border-radius: 5px;
-   overflow-y:auto;
-   
+   overflow-y:auto; 
 }
 
 .exit {
@@ -100,8 +99,8 @@ button:hover {
    padding-top: 0.5vh;
    padding-bottom: 0.5vh;
    border: 1px solid $green-shade-four;
-   width: 10.5%;
-   left: 8vh;
+   width: 14%;
+   left: 2vh;
    border-radius: 5px;
    text-align: center;
    margin-top: 1.5vh;
@@ -125,11 +124,6 @@ button:hover {
    align-items: center;
    text-align: center;
    margin-top: 5vh;
-}
-
-
-body.modal-open {
-   overflow: hidden;
 }
 
 .title {
@@ -160,16 +154,44 @@ body.modal-open {
 }
 
 .ingredients-title {
-  @include recipeTitle
+  @include recipeTitle;
+  margin-bottom: 2vh;
 }
 
 .preparation-title {
    @include recipeTitle;
+   margin-bottom: 2vh;
+}
 
+.video-title {
+   @include recipeTitle;
+   margin-top: 2vh;
 }
 
 li {
    list-style-type:none;
+   text-align: center;
+}
+
+.ingr-list {
+   font-family: $OS-LI;
+   font-size: 2vh;
+   padding: 0.2vh 0vh;
+}
+
+ul {
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.prep-list {
+   font-family: $OS-LI;
+   font-size: 1.8vh;
+   padding: 1.5vh 0vh;
+   width: 70%;
 }
 
 iframe {
