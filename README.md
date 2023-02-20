@@ -229,7 +229,7 @@ ES7 React/Redux/React-Native snippets (dsznajder)
 Jest (Meta)
 Magnifying Glass Icon (svgrepo)
 Flag Icons (Wikipedia)
-Food Photos (Various Websites)
+Food Photos (Various Websites - Copyrights belong to their respective owners)
 anime.js (Julian Garnier)
 ```
 
