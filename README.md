@@ -6,6 +6,8 @@ Mobile-first Single-Page Recipe Browser app built in React
 
 ---
 
+*This App was built for a coding interview assignment and is therefore now archived*
+
 mealStation is a recipe browser SPA made with mobile-first responsivity in mind. The App contains recipes from four different countries: Italy, China, Argentina and the United States, with each of them having two appetizers, two main courses and two desserts.
 
 The App contains a couple of search-features. Although the user is able to browse the App by searching for the name of the dish just fine, mealStation contains a custom second search/sorting feature which allows the user to search for the type of dish (appetizer, main, dessert) or even based on their kitchen of origin. Bon Appetit.
